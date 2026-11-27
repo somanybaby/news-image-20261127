@@ -37,7 +37,7 @@ when that directory exists). Running twice produces identical bytes.
 ## Output
 
 - Size: 1024 x 1024 PNG, 18,397 bytes
-- SHA-256: `5ec1d0ea0ab601294f66233824822eeee35a35bcf3ee6e64b0bdc14fa5f0d055`
+- SHA-256: `260598a16f8b6fa9a9d15459609ae1244ca4b6b8ca0f3f8bf9ea3356638eb1a7`
 
 ## License
 

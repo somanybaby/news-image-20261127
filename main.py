@@ -210,42 +210,43 @@ def main():
            "YORK'S MACY'S PARADE WAS POSTPONED FOR THE FIRST TIME IN "
            "100 YEARS.",
            2, INK, 928, 19)
-    s.fill(40, 322, 944, 2, INK)
+    # 8px clear between the top story's last line and its rule.
+    s.fill(40, 330, 944, 2, INK)
 
     # Row 1: Gulf escalation, then Russia-Ukraine.
-    story(s, 48, 340, 440, "02 - MIDDLE EAST",
+    story(s, 48, 348, 440, "02 - MIDDLE EAST",
           "GULF ON EDGE AFTER STRIKES",
           "IRANIAN DRONES HIT KUWAIT, KILLING TWO ITALIAN TECHNICIANS, AND "
           "BLASTS STRUCK TANKERS IN THE STRAIT OF HORMUZ AS THE US AND "
           "IRAN BATTLE FOR THE WATERWAY.")
-    story(s, 536, 340, 440, "03 - UKRAINE",
+    story(s, 536, 348, 440, "03 - UKRAINE",
           "RUSSIA HITS UKRAINE, 5 DEAD",
           "RUSSIAN STRIKES KILLED FIVE PEOPLE AND KNOCKED OUT POWER ACROSS "
           "UKRAINE, AND ZELENSKY WARNED OF A NEW MASS STRIKE IN THE COMING "
           "DAYS.")
-    s.fill(40, 534, 944, 2, INK)
+    s.fill(40, 542, 944, 2, INK)
 
     # Row 2: Ibiza tanker, then New Zealand's deadlocked election.
-    story(s, 48, 552, 440, "04 - EUROPE",
+    story(s, 48, 560, 440, "04 - EUROPE",
           "TANKER CAPSIZES OFF IBIZA",
           "A DIESEL TANKER, THE MED EMRE, CAPSIZED OFF IBIZA WITH UP TO "
           "7,000 TONNES ABOARD. ONE CREW MEMBER DIED AND SPAIN ACTIVATED "
           "ITS LEVEL 2 POLLUTION PLAN.")
-    story(s, 536, 552, 440, "05 - PACIFIC",
+    story(s, 536, 560, 440, "05 - PACIFIC",
           "NZ VOTE DEADLOCKED",
           "NEW ZEALAND'S ELECTION ENDED IN DEADLOCK. THE CENTRIST "
           "OPPORTUNITY PARTY, WITH SEVEN SEATS, NOW HOLDS THE BALANCE OF "
           "POWER.")
-    s.fill(40, 746, 944, 2, INK)
+    s.fill(40, 754, 944, 2, INK)
 
     # Last story, full width: Delhi cyber-slavery bust.
-    story(s, 48, 764, 928, "06 - SOUTH ASIA",
+    story(s, 48, 772, 928, "06 - SOUTH ASIA",
           "DELHI BUSTS CYBER-SLAVE RING",
           "DELHI POLICE RESCUED 164 FOREIGNERS, 92 INDONESIANS AND 72 "
           "MALAYSIANS, FROM A CYBER SLAVERY RACKET THAT LURED THEM WITH "
           "FAKE JOB OFFERS.")
-    s.fill(40, 884, 944, 2, INK)
-    centered(s, 908, "SIX STORIES - ONE PAGE - 27 NOVEMBER 2026", 2, NAVY)
+    s.fill(40, 892, 944, 2, INK)
+    centered(s, 916, "SIX STORIES - ONE PAGE - 27 NOVEMBER 2026", 2, NAVY)
 
     out = "/output/entry.png" if os.path.isdir("/output") else "entry.png"
     write_png(out, W, H, s.px)
